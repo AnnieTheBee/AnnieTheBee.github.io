@@ -1,0 +1,66 @@
+<html>
+<head>
+</head>
+
+<style> 
+
+div 
+{ 
+display: inline-block;
+transition:1s;
+background-position:center;
+background:red; 
+background-size: cover; 
+background-repeat: no-repeat; 
+border: 4px double yellow; 
+text-align: center; 
+color:yellow;
+text-shadow: #fffcfc 2px -1px 1px;
+}
+
+
+</style>
+
+<body>
+<div id="some" style="margin-left:40px; 
+margin-top: 28px;"> WTF?
+<div id="disap"; onclick="go()"; 
+<!--style="position: absolute;
+margin-left:-61px; width:50px; margin-top:-23px"-->
+> < </div>
+<div id="nodisap"; onclick="nogo()"; 
+<!--style="position: absolute;
+margin-left:93px; width:50px; margin-top:-23px"-->
+> > </div>
+</div>
+
+
+</body>
+
+
+<script>
+ x=0;
+ function go()
+{
+if(x<3) {x++} else {x=1;};
+disap.innerHTML=x;
+
+some.classList.toggle("disap");
+some.style.backgroundImage='url("image'+x+'.jpg")';
+}
+
+x=1;
+ function nogo()
+{
+if(x>1) {x--} else {x=3;}
+nodisap.innerHTML=x;
+
+//div=document.querySelector("#hey");
+some.classList.toggle("nodisap");
+some.style.backgroundImage='url("image'+x+'.jpg")';
+}
+
+ 
+</script>
+
+</html>
