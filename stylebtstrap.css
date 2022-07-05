@@ -1,0 +1,29 @@
+*{border: 1px solid black;}
+body { border: 5px solid green;
+       background: orange;
+}
+.row { height: 200px;}
+#shapka { height:100px; }
+.1cont { border: 4px solid green;
+             max-height: 100%;
+             max-width: 100%;
+}
+
+#download { border: 1px solid white;}
+
+#home {text-decoration:underline;}
+#phone {height:500px;}
+#phone #phone-center { height: inherit; }
+#phone img {max-height: 100%; max-width:100%;}
+		 
+header ul li a { color: DodgerBlue !important; }		  
+content {text-align:center;}
+
+#create {height: 400px;
+         max-width: 100%;
+}
+		 
+#img-fluid { max-width: 100%;
+             height: 100%;
+}		 
+	
