@@ -1,0 +1,49 @@
+<html>
+<head>
+</head>
+
+<style> 
+
+div 
+{width: 250px; 
+height:250px; 
+background:red; 
+background-size: contain; 
+background-repeat: no-repeat; 
+border: 4px double yellow; 
+transition: 1s; 
+text-align: center; 
+color:yellow;}
+.hey 
+{background: purple; 
+margin-left: 300px; 
+border-radius: 80px; border: 
+4px dotted purple; 
+text-align: center;
+color: purple;}
+
+</style>
+
+<body>
+<div onclick="go()"; id="some">WTF?</div>
+
+
+</body>
+
+
+<script>
+ x=1;
+ function go()
+{
+if(x<3) {x++} else {x=1;};
+some.innerHTML=x;
+
+div=document.querySelector("#some");
+some.classList.toggle("hey");
+some.style.backgroundImage='url("image'+x+'.jpg")';
+}
+
+ 
+</script>
+
+</html>

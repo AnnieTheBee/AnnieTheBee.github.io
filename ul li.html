@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+/*верхний по горизонтали*/
+div#menu > ul >li 
+{display: inline-block;}
+
+/*внутренний список*/
+div#menu > ul > li > ul 
+{display:none; padding-left:0; list-style-type:none; 
+}
+
+div#menu > ul > li>ul>li:hover
+{list-style-type:disc;}
+
+div#menu > ul > li:hover>ul
+{display:block; position:absolute;}
+
+</style>
+</head>
+
+<body>
+
+<h1>University</h1>
+
+<div id="menu">
+<ul>
+   <li>Students<ul>
+               <li>Mary</li>
+               <li>Sam</li>
+               </ul>
+    </li>           
+   <li>Teachers</li>
+</ul>
+</div>   
+</body>
+</html>
